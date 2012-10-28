@@ -105,12 +105,14 @@ typedef struct
 {
 	${0:/* data */}
 } ${1:name};
+endsnippet
 
 snippet tde "typedef enum" !b
 typedef enum
 {
 	${0:/* data */}
 } ${1:name};
+endsnippet
 
 snippet printf "printf .. (printf)" !b
 printf("${1:%s}\n"${1/([^%]|%%)*(%.)?.*/(?2:, :\);)/}$2${1/([^%]|%%)*(%.)?.*/(?2:\);)/}
